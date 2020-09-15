@@ -1,0 +1,34 @@
+.slider_area .single_slider {
+  position: relative;
+  z-index: 0;
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slider_area .single_slider::before {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(../img/indexpage.JPG);
+  width: 624px;
+  height: 567px;
+  content: "";
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.slider_bg_1 {
+  background-color: #008c76ff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
