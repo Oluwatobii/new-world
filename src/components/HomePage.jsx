@@ -9,16 +9,20 @@ export default function HomePage() {
   return (
     <div className="body">
       <header className="header">
-        <div className="logo-box">
-          <img src={require("../img/logo1.png")} alt="logo" className="logo" />
+        <div className="header__logo-box">
+          <img
+            src={require("../img/logo1.png")}
+            alt="logo"
+            className="header__logo"
+          />
         </div>
 
-        <div className="text-box">
+        <div className="header__text-box">
           <h2 className="primary">Hello, I'm</h2>
-          <h1 className="primary-main">
+          <h1 className="primary--main">
             Oluwatobi A.<strong style={{ color: "#eeb238ff" }}>Bello</strong>
           </h1>
-          <div className="primary-sub">
+          <div className="primary--sub">
             <span>
               Web Developer. <br />
               Mechanical Engineer. <br />
@@ -29,7 +33,7 @@ export default function HomePage() {
             </span>
           </div>
           <div>
-            <a href="#0" className="btn btn-white btn-animated">
+            <a href="#0" className="btn btn--white btn--animated">
               Learn More
             </a>
           </div>
