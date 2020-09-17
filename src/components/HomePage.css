@@ -1,18 +1,25 @@
 /* ../img/indexpage.JPG */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 .body {
   font-family: "lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 5px;
+  padding: 0.3rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -30,12 +37,12 @@
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 55px;
+  height: 5.5rem;
 }
 
 .primary {
@@ -46,9 +53,9 @@
 
 .primary-main {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 15px;
+  letter-spacing: 1.5rem;
   animation: moveInRight 1s ease-in;
 }
 
@@ -56,9 +63,9 @@
   color: #eeb238ff;
   position: relative;
   border: 0px solid #ddd;
-  height: 50px;
-  line-height: 50px;
-  font-size: 25px;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   overflow: hidden;
   display: inline-block;
@@ -73,11 +80,11 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(15px);
+    transform: translateX(1.5rem);
   }
 
   100% {
@@ -89,11 +96,11 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-15px);
+    transform: translateX(-1.5rem);
   }
 
   100% {
@@ -105,7 +112,7 @@
 @keyframes moveInBotton {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {
@@ -120,25 +127,25 @@
     top: 0;
   }
   20% {
-    top: 0px;
+    top: 0rem;
   }
   25% {
-    top: -50px;
+    top: -5rem;
   }
   45% {
-    top: -50px;
+    top: -5rem;
   }
   50% {
-    top: -100px;
+    top: -10rem;
   }
   70% {
-    top: -100px;
+    top: -10rem;
   }
   75% {
-    top: -150px;
+    top: -15rem;
   }
   95% {
-    top: -150px;
+    top: -15rem;
   }
 }
 
@@ -153,21 +160,22 @@
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .btn-white {
@@ -180,7 +188,7 @@
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
