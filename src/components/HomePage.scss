@@ -1,20 +1,8 @@
-$color-primary: #008c77;
-$color-primary-light: #abd1c9;
+@import "abstracts/variables";
 
-$color-grey-dark: #777;
-$color-white: #fff;
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
+@import "base/animation";
+@import "base/button";
+@import "base/base";
 
 .body {
   font-family: "lato", sans-serif;
@@ -23,7 +11,6 @@ html {
   line-height: 1.7;
   color: $color-grey-dark;
   padding: 0.3rem;
-  box-sizing: border-box;
 }
 
 .header {
@@ -37,179 +24,55 @@ html {
   background-size: cover;
   background-position: top;
   position: relative;
-}
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo {
-  height: 5.5rem;
+  &__logo {
+    height: 5.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .primary {
-  color: #eeb238ff;
+  color: $color-surname;
   animation: moveInLeft 1s ease-in;
   backface-visibility: hidden;
-}
+  font-size: x-large;
 
-.primary--main {
-  color: $color-white;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 1.5rem;
-  animation: moveInRight 1s ease-in;
-}
-
-.primary--sub {
-  color: #eeb238ff;
-  position: relative;
-  border: 0px solid #ddd;
-  height: 5rem;
-  line-height: 5rem;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  overflow: hidden;
-  display: inline-block;
-  animation: moveInRight 1s ease-in;
-}
-
-.primary--sub span {
-  animation: intrests 10s ease infinite;
-  position: relative;
-  color: #e58e26;
-}
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
+  &--main {
+    color: $color-white;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation: moveInRight 1s ease-in;
   }
 
-  80% {
-    transform: translateX(1.5rem);
+  &--sub {
+    color: $color-surname;
+    position: relative;
+    border: 0px solid #ddd;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    display: inline-block;
+    animation: moveInRight 1s ease-in;
+
+    & span {
+      animation: intrests 10s ease infinite;
+      position: relative;
+      color: $color-intrests;
+    }
   }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  80% {
-    transform: translateX(-1.5rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInBotton {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes intrests {
-  0%,
-  100% {
-    top: 0;
-  }
-  20% {
-    top: 0rem;
-  }
-  25% {
-    top: -5rem;
-  }
-  45% {
-    top: -5rem;
-  }
-  50% {
-    top: -10rem;
-  }
-  70% {
-    top: -10rem;
-  }
-  75% {
-    top: -15rem;
-  }
-  95% {
-    top: -15rem;
-  }
-}
-
-.header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative;
-  font-size: 1.6rem;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-}
-
-.btn--white {
-  background-color: $color-white;
-  color: $color-grey-dark;
-}
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-
-.btn--white::after {
-  background-color: $color-white;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--animated {
-  animation: moveInBotton 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
 }
