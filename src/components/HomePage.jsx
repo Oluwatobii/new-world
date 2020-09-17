@@ -1,53 +1,40 @@
 import React from "react";
 import "./HomePage.css";
+/*
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+*/
 
 export default function HomePage() {
   return (
-    <div className="slider_area">
-      <div className="single_slider  d-flex align-items-center slider_bg_1">
-        <div className="shap_pattern d-none d-lg-block">
-          <img src="img/about/grid.png" alt="" />
+    <div className="body">
+      <header className="header">
+        <div className="logo-box">
+          <img src="../img/logo.jpg" alt="logo" className="logo" />
+        </div>
 
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-xl-12">
-                <div className="slider_text text-center">
-                  <h3>Hello, I'm</h3>
-                  <h1>Oluwatobi A. Bello</h1>
-                  <span>Car Enthustist. </span>
-                  <span>Manchester United Supporter. </span>
-                  <span>Web Developer. </span>
-                  <span>Mechanical Engineer. </span>
-                  <span>Anime watcher. </span>
-                  <span>Manga reader. </span>
-                </div>
-              </div>
-            </div>
-            <div className="social_links">
-              <ul>
-                <li>
-                  <FontAwesomeIcon icon={faHome} />
-                  <a href="#0">
-                    <i className="fab fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#1">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#2">
-                    <i className="fa fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div className="text-box">
+          <h2 className="primary">Hello, I'm</h2>
+          <h1 className="primary-main">
+            Oluwatobi A.<strong style={{ color: "#eeb238ff" }}>Bello</strong>
+          </h1>
+          <div className="primary-sub">
+            <span>
+              Web Developer. <br />
+              Mechanical Engineer. <br />
+              Car Enthustist. <br />
+              Manchester United Supporter. <br />
+              Anime watcher. <br />
+              &amp; Manga reader.
+            </span>
+          </div>
+          <div>
+            <a href="#0" className="btn btn-white btn-animated">
+              Learn More
+            </a>
           </div>
         </div>
-      </div>
+      </header>
     </div>
   );
 }
