@@ -10,7 +10,7 @@ export default function HomePage() {
     <div className="body">
       <header className="header">
         <div className="logo-box">
-          <img src="../img/logo.jpg" alt="logo" className="logo" />
+          <img src={require("../img/logo1.png")} alt="logo" className="logo" />
         </div>
 
         <div className="text-box">

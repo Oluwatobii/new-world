@@ -35,7 +35,7 @@
 }
 
 .logo {
-  height: 45px;
+  height: 55px;
 }
 
 .primary {
@@ -66,7 +66,7 @@
 }
 
 .primary-sub span {
-  animation: animate 10s ease infinite;
+  animation: intrests 10s ease infinite;
   position: relative;
   color: #e58e26;
 }
@@ -114,7 +114,7 @@
   }
 }
 
-@keyframes animate {
+@keyframes intrests {
   0%,
   100% {
     top: 0;
