@@ -1,0 +1,119 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/animation";
+@import "base/button";
+@import "base/base";
+
+@import "layout/grid";
+
+.service_area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  // margin-top: -15vh;
+  height: 90vh;
+  background-size: cover;
+  text-align: center;
+
+  .container {
+    padding-left: 40vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .section_title {
+    span {
+      position: relative;
+      z-index: 3;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      color: #001d38;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      display: block;
+      padding-top: 14px;
+      &:before {
+        position: absolute;
+        height: 60px;
+        width: 1px;
+        background: $color-primary;
+        content: "";
+        left: 50%;
+        bottom: 100%;
+      }
+    }
+    h3 {
+      font-size: 50px;
+      line-height: 62px;
+      font-weight: 700;
+      color: #001d38;
+      position: relative;
+      z-index: 0;
+      padding-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      color: $color-grey-dark;
+      line-height: 28px;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    &.white_text {
+      h3 {
+        color: $color-white;
+      }
+      span {
+        color: $color-white;
+        padding-top: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  .mb-50 {
+    margin-bottom: 50px;
+  }
+}
+
+.col-1-of-4.feature-card {
+  padding-top: 5rem;
+}
+.feature-box {
+  background-color: rgba($color-primary, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  height: 30rem;
+  // text-align: center;
+  // align-content: center;
+  border-radius: 1.5rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+
+  &__icon {
+    font-size: 12rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    color: linear-gradient(to right, $color-primary-light, $color-primary);
+    // -webkit-background-clip: text;
+    // background-clip: text;
+    // color: transparent;
+  }
+
+  &__text {
+    padding-top: 1rem;
+  }
+
+  &:hover {
+    transform: translateY(1.5rem) scale(1.03);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
