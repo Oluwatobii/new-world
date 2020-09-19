@@ -30,11 +30,11 @@ export default function AboutMe() {
         <div className="col-1-of-2"></div>
       </div>
       <div className="brief-info">
-        <section className="card-list">
-          <article className="card">
-            <header className="card-header">
+        <section className="card-aboutme-list">
+          <article className="card-aboutme">
+            <header className="card-aboutme-header">
               <img
-                className="card-pic"
+                className="card-aboutme-pic"
                 alt=""
                 src={require("../img/logo1.png")}
               />
@@ -44,10 +44,10 @@ export default function AboutMe() {
               <h2>Total Projects</h2>
             </div>
           </article>
-          <article className="card">
-            <header className="card-header">
+          <article className="card-aboutme">
+            <header className="card-aboutme-header">
               <img
-                className="card-pic"
+                className="card-aboutme-pic"
                 alt=""
                 src={require("../img/logo1.png")}
               />
@@ -57,10 +57,10 @@ export default function AboutMe() {
               <h2>On-Going Projects</h2>
             </div>
           </article>
-          <article className="card">
-            <header className="card-header">
+          <article className="card-aboutme">
+            <header className="card-aboutme-header">
               <img
-                className="card-pic"
+                className="card-aboutme-pic"
                 alt=""
                 src={require("../img/logo1.png")}
               />
