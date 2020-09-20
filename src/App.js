@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import Navigation from "./components/Navigation";
 import Portfolio from "./components/Portfolio";
@@ -16,6 +17,7 @@ function App() {
       <Portfolio />
       <AboutMe />
       <ContactMe />
+      <Footer />
     </div>
   );
 }
