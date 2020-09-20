@@ -7,7 +7,7 @@ export default function Portfolio() {
       <div className="u-center-text u-margin-bottom-big">
         <h3 className="section_title">Portfolio</h3>
         <h2 className="heading-secondary">
-          Some of the projects ive done here...
+          Some of the projects i've done here...
         </h2>
       </div>
 
