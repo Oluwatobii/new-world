@@ -1,5 +1,5 @@
 import React from "react";
-import "./ServiceProvided.scss";
+import "./sass/ServiceProvided.scss";
 import { FaLaptopCode, FaUserFriends } from "react-icons/fa";
 
 export default function ServiceProvided() {

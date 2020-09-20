@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useWindowScroll } from "react-use";
 import { FaArrowUp } from "react-icons/fa";
 
-import "./ScrollToTop.scss";
+import "./sass/ScrollToTop.scss";
 
 export default function ScrollToTop() {
   const { y: pageYOffset } = useWindowScroll();

@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContactMe.scss";
+import "./sass/ContactMe.scss";
 
 /*
 import {

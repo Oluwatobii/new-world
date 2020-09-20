@@ -113,7 +113,7 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url(../img/port-1.jpg);
+        url(../../img/port-1.jpg);
     }
     &--2 {
       background-image: linear-gradient(
@@ -121,7 +121,7 @@
           $color-tertiary-light,
           $color-tertiary-dark
         ),
-        url(../img/port-2.jpg);
+        url(../../img/port-2.jpg);
     }
     &--3 {
       background-image: linear-gradient(
@@ -129,7 +129,7 @@
           $color-quaternary-light,
           $color-quaternary-dark
         ),
-        url(../img/port-3.jpg);
+        url(../../img/port-3.jpg);
     }
   }
 

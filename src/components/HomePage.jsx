@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomePage.scss";
+import "./sass/HomePage.scss";
 /*
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

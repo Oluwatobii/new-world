@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navigation.scss";
+import "./sass/Navigation.scss";
 
 export default function Navigation() {
   return (
