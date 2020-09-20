@@ -1,0 +1,19 @@
+@import "abstracts/variables";
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 4.2rem;
+  left: 93%;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background: $color-primary;
+  color: $color-white;
+  z-index: 1;
+}
+.scroll-to-top .icon {
+  margin-top: 1rem;
+  justify-content: center;
+  animation: scrollTop 0.5s alternate ease infinite;
+  font-size: xx-large;
+}
