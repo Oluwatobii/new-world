@@ -1,5 +1,5 @@
 import React from "react";
-import "./sass/Footer.scss";
+import "./sass/components/Footer.scss";
 import {
   FaTwitter,
   FaLinkedinIn,

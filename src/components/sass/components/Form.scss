@@ -1,6 +1,7 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "base/animation";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+@import "../base/animation";
 
 .form-section {
   margin: 0;

@@ -11,6 +11,10 @@
     font-size: $default-font-size;
   }
 
+  &--1 {
+    margin-right: 10rem;
+  }
+
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.3);

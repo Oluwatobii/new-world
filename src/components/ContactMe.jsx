@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./Form";
-import "./sass/ContactMe.scss";
+import "./sass/components/ContactMe.scss";
 
 export default function ContactMe() {
   return (

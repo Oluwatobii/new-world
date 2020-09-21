@@ -1,11 +1,11 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
 
-@import "base/animation";
-@import "base/button";
-@import "base/base";
+@import "../base/animation";
+@import "../base/button";
+@import "../base/base";
 
-@import "layout/grid";
+@import "../layout/grid";
 
 .section-about {
   background-color: $color-grey-light-1;

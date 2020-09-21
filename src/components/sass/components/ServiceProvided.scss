@@ -1,11 +1,11 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
 
-@import "base/animation";
-@import "base/button";
-@import "base/base";
+@import "../base/animation";
+@import "../base/button";
+@import "../base/base";
 
-@import "layout/grid";
+@import "../layout/grid";
 
 .service_area {
   padding-top: 120px;

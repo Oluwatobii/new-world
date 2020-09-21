@@ -1,5 +1,5 @@
 import React from "react";
-import "./sass/ServiceProvided.scss";
+import "./sass/components/ServiceProvided.scss";
 
 export default function ServiceProvided() {
   return (

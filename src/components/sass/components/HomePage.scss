@@ -1,8 +1,8 @@
-@import "abstracts/variables";
+@import "../abstracts/variables";
 
-@import "base/animation";
-@import "base/button";
-@import "base/base";
+@import "../base/animation";
+@import "../base/button";
+@import "../base/base";
 
 .body {
   font-family: "lato", sans-serif;
@@ -20,7 +20,7 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary, 0.8)
     ),
-    url(../../img/pic1.jpg);
+    url(../../../img/pic1.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
