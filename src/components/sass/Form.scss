@@ -1,0 +1,223 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/animation";
+
+.form-section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  // background: #112d42;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    // background: #03a9f4;
+  }
+
+  & .form-container {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+
+    & .contactinfo {
+      position: absolute;
+      top: 40px;
+      width: 350px;
+      height: calc(100% - 80px);
+      background: #0f3959;
+      z-index: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+
+      & .sci li {
+        list-style: none;
+        margin-right: 15px;
+
+        &:hover a {
+          opacity: 1;
+        }
+
+        & a {
+          text-decoration: none;
+          filter: invert(1);
+          opacity: 0.5;
+          font-size: 1.5rem;
+        }
+      }
+
+      & .info li:hover span {
+        opacity: 1;
+      }
+
+      & .sci {
+        position: relative;
+        display: flex;
+        margin-top: 60px;
+        margin-left: 70px;
+      }
+
+      &--box {
+        margin-top: 70px;
+        margin-left: 25px;
+      }
+
+      & h2 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      & .info {
+        position: relative;
+        margin: 20px 0;
+        margin-left: -16px;
+
+        & li {
+          position: relative;
+          list-style: none;
+          display: flex;
+          margin: 20px 0;
+          cursor: pointer;
+          align-items: flex-start;
+
+          & span {
+            // max-width: 100px;
+            font-size: 1.3rem;
+            filter: invert(1);
+            opacity: 0.5;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    & .contactform {
+      position: absolute;
+      padding: 70px 50px;
+      background: #fff;
+      margin-left: 150px;
+      padding-left: 250px;
+      width: calc(100% - 150px);
+      height: 100%;
+      box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+
+      & h2 {
+        color: #0f3959;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      & .formbox {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+
+        & .inputbox textarea {
+          min-height: 120px;
+        }
+
+        & .inputbox span {
+          position: absolute;
+          left: 0;
+          padding: 5px 0;
+          font-size: 18px;
+          font-weight: 300;
+          color: #333;
+          transition: 0.5s;
+          pointer-events: none;
+        }
+
+        & .inputbox input[type="submit"] {
+          position: relative;
+          cursor: pointer;
+          background: #0f3959;
+          color: #fff;
+          border: none;
+          max-width: 150px;
+          padding: 12px;
+
+          &:hover {
+            background: #ff568c;
+          }
+        }
+      }
+
+      & .inputbox {
+        position: relative;
+        margin: 0 0 35px 0;
+
+        &.w50 {
+          width: 47%;
+        }
+
+        &.w100 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.form-section .form-container .contactform .formbox .inputbox input,
+.form-section .form-container .contactform .formbox .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  resize: none;
+  font-size: 18px;
+  font-weight: 300px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777777;
+  outline: none;
+}
+
+.form-section
+  .form-container
+  .contactform
+  .formbox
+  .inputbox
+  input:focus
+  ~ span,
+.form-section
+  .form-container
+  .contactform
+  .formbox
+  .inputbox
+  textarea:focus
+  ~ span,
+.form-section
+  .form-container
+  .contactform
+  .formbox
+  .inputbox
+  input:valid
+  ~ span,
+.form-section
+  .form-container
+  .contactform
+  .formbox
+  .inputbox
+  textarea:valid
+  ~ span {
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ff568c;
+}

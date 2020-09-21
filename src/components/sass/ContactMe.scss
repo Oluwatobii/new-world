@@ -5,8 +5,12 @@
 .banner-text {
   width: 100%;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 
-  & .contact-us-form {
+  & .contact-info {
     height: 5rem;
     float: center;
     margin-top: 10%;
