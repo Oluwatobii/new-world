@@ -12,6 +12,34 @@
   padding: 13rem 0;
   margin-top: -49rem;
   height: 81vh;
+
+  & .about-container {
+    padding-left: 35vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  span {
+    position: relative;
+    z-index: 3;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #001d38;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: block;
+    padding-top: 14px;
+    &:before {
+      position: absolute;
+      height: 60px;
+      width: 1px;
+      background: $color-primary;
+      content: "";
+      left: 50%;
+      bottom: 100%;
+    }
+  }
 }
 
 .heading-secondary {
@@ -66,114 +94,13 @@
   margin-bottom: 1.5rem;
 }
 
-///////////////////////////////////////////////////////
-//Card Styling//
-///////////////////////////////////////////////////////
-.brief-info {
-  padding-left: 40%;
+.about-me {
+  margin-top: 10rem;
+  margin-left: -5rem;
 }
 
-.card-aboutme {
-  height: 350px;
-  width: 200px;
-  min-width: 150px;
-  padding: 1.5rem;
-  grid-template-areas: "image", "text";
-  border-radius: 16px;
-  background: $color-primary-light;
-  box-shadow: -1rem 0 3rem #000;
-  display: flex;
-  flex-direction: column;
-  transition: 0.2s;
-  margin: 0;
-  scroll-snap-align: start;
-  clear: both;
-  position: relative;
-
-  &-list {
-    display: flex;
-    padding: 3rem;
-
-    &::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: $color-black;
-      border-radius: 10px;
-      box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-        inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-    }
-
-    &::-webkit-scrollbar-track {
-      background: linear-gradient(
-        90deg,
-        $color-black,
-        $color-black 1px,
-        $color-black 0,
-        $color-black
-      );
-    }
-  }
-}
-
-.card-aboutme:focus-within ~ .card-aboutme,
-.card-aboutme:hover ~ .card-aboutme {
-  transform: translateX(130px);
-}
-
-.card-aboutme:hover {
-  transform: translateY(-1rem);
-  background: $color-primary;
-}
-
-.card-aboutme:not(:first-child) {
-  margin-left: -130px;
-}
-
-.card-aboutme-pic {
-  grid-area: image;
-  height: 20rem;
-  width: 20rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  background-size: cover;
-
-  &:hover {
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
-    text-shadow: none;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-}
-
-.info {
-  margin-bottom: auto;
-
-  & p {
-    font-size: 4rem;
-    margin: 0 0 1rem;
-    color: $color-black;
-    text-align: center;
-  }
-
-  & h2 {
-    font-size: 20px;
-    margin: 0.25rem 0 auto;
-    text-decoration: none;
-    text-align: center;
-    color: inherit;
-    border: 0;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  &:hover {
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
-    text-shadow: none;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
+// This is a placeholer styling, remove when ready!
+.placeholder-img {
+  width: 35rem;
+  height: auto;
 }

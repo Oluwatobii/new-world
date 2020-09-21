@@ -1,11 +1,10 @@
 import React from "react";
 import "./sass/ServiceProvided.scss";
-import { FaLaptopCode, FaUserFriends } from "react-icons/fa";
 
 export default function ServiceProvided() {
   return (
     <div className="service_area">
-      <div className="container">
+      <div className="main-container">
         <div className="row">
           <div className="col-xl-12">
             <div className="section_title text-center mb-65">
@@ -15,58 +14,80 @@ export default function ServiceProvided() {
           </div>
         </div>
       </div>
-      <section className="section-features">
-        <div className="row">
-          <div className="col-1-of-4 feature-card">
-            <div className="feature-box">
-              <div className="feature-box__icon icon-basic-world">
-                <FaLaptopCode />
-              </div>
-              <h3 className="heading-tertiary">Full-Stack Developer</h3>
-              <p className="feature-box__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+      <div className="container">
+        <section className="card">
+          <div className="imgBx">
+            <img
+              className="imgBx--img"
+              alt="text"
+              src={require("../img/web-dev.jpg")}
+            />
           </div>
-          <div className="col-1-of-4 feature-card">
-            <div className="feature-box">
-              <div className="feature-box__icon icon-basic-world">
-                <FaLaptopCode />
-              </div>
-              <h3 className="heading-tertiary">Mechanical Engineering</h3>
-              <p className="feature-box__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+          <div className="content">
+            <h2>Full-Stack Developer</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              tempora animi, voluptates alias natus pariatur praesentium, iusto,
+              aut nisi aspernatur incidunt ut quasi vero ipsam magnam explicabo
+              nostrum itaque reprehenderit.
+            </p>
           </div>
-          <div className="col-1-of-4 feature-card">
-            <div className="feature-box">
-              <div className="feature-box__icon icon-basic-world">
-                <FaLaptopCode />
-              </div>
-              <h3 className="heading-tertiary">Place-Holder</h3>
-              <p className="feature-box__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+        </section>
+        <section className="card">
+          <div className="imgBx">
+            <img
+              className="imgBx--img"
+              alt="text"
+              src={require("../img/mech-eng.jpg")}
+            />
           </div>
-          <div className="col-1-of-4 feature-card">
-            <div className="feature-box">
-              <div className="feature-box__icon icon-basic-world">
-                <FaUserFriends />
-              </div>
-              <h3 className="heading-tertiary">Collaborative Development</h3>
-              <p className="feature-box__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+          <div className="content">
+            <h2>Mechanical Engineer</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              tempora animi, voluptates alias natus pariatur praesentium, iusto,
+              aut nisi aspernatur incidunt ut quasi vero ipsam magnam explicabo
+              nostrum itaque reprehenderit.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
+        <section className="card">
+          <div className="imgBx">
+            <img
+              className="imgBx--img"
+              alt="text"
+              src={require("../img/cad-des.jpg")}
+            />
+          </div>
+          <div className="content">
+            <h2>CAD Designer</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              tempora animi, voluptates alias natus pariatur praesentium, iusto,
+              aut nisi aspernatur incidunt ut quasi vero ipsam magnam explicabo
+              nostrum itaque reprehenderit.
+            </p>
+          </div>
+        </section>
+        <section className="card">
+          <div className="imgBx">
+            <img
+              className="imgBx--img"
+              alt="text"
+              src={require("../img/colab-dev.jpg")}
+            />
+          </div>
+          <div className="content">
+            <h2>Collaborative Development</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              tempora animi, voluptates alias natus pariatur praesentium, iusto,
+              aut nisi aspernatur incidunt ut quasi vero ipsam magnam explicabo
+              nostrum itaque reprehenderit.
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

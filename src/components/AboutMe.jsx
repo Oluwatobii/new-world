@@ -4,12 +4,21 @@ import "./sass/AboutMe.scss";
 export default function AboutMe() {
   return (
     <section className="section-about">
-      <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">About Me</h2>
+      <div className="about-container">
+        <div className="row">
+          <div className="col-xl-12">
+            <div className="section_title text-center mb-65">
+              <span>About Me</span>
+              <div className="u-center-text u-margin-bottom-big">
+                <h2 className="heading-secondary">Get to know me better...</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="row">
-        <div className="col-1-of-2">
+        <div className="col-1-of-2 about-me">
           <h3 className="heading-tertiary u-margin-bottom-small">
             Designing With Passion While Exploring The World.
           </h3>
@@ -23,54 +32,17 @@ export default function AboutMe() {
             and software development.
           </p>
 
-          <a href="#1" className="btn-text">
+          <a href="#1" className="btn btn--blue">
             Download Resume &darr;
           </a>
         </div>
-        <div className="col-1-of-2"></div>
-      </div>
-      <div className="brief-info">
-        <section className="card-aboutme-list">
-          <article className="card-aboutme">
-            <header className="card-aboutme-header">
-              <img
-                className="card-aboutme-pic"
-                alt=""
-                src={require("../img/logo1.png")}
-              />
-            </header>
-            <div className="info">
-              <p>0+</p>
-              <h2>Total Projects</h2>
-            </div>
-          </article>
-          <article className="card-aboutme">
-            <header className="card-aboutme-header">
-              <img
-                className="card-aboutme-pic"
-                alt=""
-                src={require("../img/logo1.png")}
-              />
-            </header>
-            <div className="info">
-              <p>0+</p>
-              <h2>On-Going Projects</h2>
-            </div>
-          </article>
-          <article className="card-aboutme">
-            <header className="card-aboutme-header">
-              <img
-                className="card-aboutme-pic"
-                alt=""
-                src={require("../img/logo1.png")}
-              />
-            </header>
-            <div className="info">
-              <p>0+</p>
-              <h2>Somn Else</h2>
-            </div>
-          </article>
-        </section>
+        <div className="col-1-of-2">
+          <img
+            className="placeholder-img"
+            alt="text"
+            src={require("../img/placeholder.jpg")}
+          />
+        </div>
       </div>
     </section>
   );

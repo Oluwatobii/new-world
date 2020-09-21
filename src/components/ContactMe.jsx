@@ -6,6 +6,7 @@ export default function ContactMe() {
   return (
     <div className="main-container">
       <div className="banner-text">
+        {/* <h2>Get in touch</h2> */}
         <Form />
       </div>
       <div className="animation-area">

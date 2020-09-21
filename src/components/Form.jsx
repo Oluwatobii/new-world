@@ -59,32 +59,36 @@ export default function Form() {
           </div>
         </div>
         <div className="contactform">
-          <h2>Send a Message</h2>
-          <div className="formbox">
-            <div className="inputbox w50">
-              <input type="text" name="" required />
-              <span>First Name</span>
+          <form>
+            <h2>Send a Message</h2>
+            <div className="formbox">
+              <div className="inputbox w50">
+                <input type="text" name="" required />
+                <span>First Name</span>
+              </div>
+              <div className="inputbox w50">
+                <input type="text" name="" required />
+                <span>Last Name</span>
+              </div>
+              <div className="inputbox w50">
+                <input type="text" name="" required />
+                <span>Email Address</span>
+              </div>
+              <div className="inputbox w50">
+                <input type="text" name="" required />
+                <span>Moible Number</span>
+              </div>
+              <div className="inputbox w100">
+                <textarea type="text" name="" required />
+                <span>Write your message here...</span>
+              </div>
+              <div className="inputbox w100">
+                <a href="#1" className="btn btn--dark-blue">
+                  Send
+                </a>
+              </div>
             </div>
-            <div className="inputbox w50">
-              <input type="text" name="" required />
-              <span>Last Name</span>
-            </div>
-            <div className="inputbox w50">
-              <input type="text" name="" required />
-              <span>Email Address</span>
-            </div>
-            <div className="inputbox w50">
-              <input type="text" name="" required />
-              <span>Moible Number</span>
-            </div>
-            <div className="inputbox w100">
-              <textarea type="text" name="" required />
-              <span>Write your message here...</span>
-            </div>
-            <div className="inputbox w100">
-              <input type="submit" value="Send" />
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
