@@ -82,8 +82,9 @@
 }
 
 .paragraph {
-  font-size: $default-font-size;
+  font-size: large;
   text-align: justify;
+  line-height: 3.7rem;
 
   &:not(:last-child) {
     margin-bottom: 3rem;

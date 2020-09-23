@@ -26,10 +26,9 @@ export default function ServiceProvided() {
           <div className="content">
             <h2>Full-Stack Developer</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              tempora animi, voluptates alias natus pariatur praesentium, iusto,
-              aut nisi aspernatur incidunt ut quasi vero ipsam magnam explicabo
-              nostrum itaque reprehenderit.
+              I develop for the web, working with various stack technologies
+              such as; REact, Node, MongoDB, PostgreSQL, Ruby on Rails, and
+              more. This site is built on React!
             </p>
           </div>
         </section>
@@ -44,10 +43,8 @@ export default function ServiceProvided() {
           <div className="content">
             <h2>Mechanical Engineer</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              tempora animi, voluptates alias natus pariatur praesentium, iusto,
-              aut nisi aspernatur incidunt ut quasi vero ipsam magnam explicabo
-              nostrum itaque reprehenderit.
+              Master's in Mechanical Engineering from Concordia University.
+              Designing that internal combustion engine won't be a problem.
             </p>
           </div>
         </section>
@@ -62,10 +59,8 @@ export default function ServiceProvided() {
           <div className="content">
             <h2>CAD Designer</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              tempora animi, voluptates alias natus pariatur praesentium, iusto,
-              aut nisi aspernatur incidunt ut quasi vero ipsam magnam explicabo
-              nostrum itaque reprehenderit.
+              I draw cool 2D/3D CAD designs, Best believe i can design for you
+              the Iron Man's helment, incase you want to join the Avengers.
             </p>
           </div>
         </section>
@@ -81,9 +76,7 @@ export default function ServiceProvided() {
             <h2>Collaborative Development</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              tempora animi, voluptates alias natus pariatur praesentium, iusto,
-              aut nisi aspernatur incidunt ut quasi vero ipsam magnam explicabo
-              nostrum itaque reprehenderit.
+              tempora animi, voluptates alias natus pariatur praesentium, iusto.
             </p>
           </div>
         </section>
