@@ -3,6 +3,27 @@
 
 @import "../base/animation";
 
+.contact-me {
+  margin-top: 5rem;
+  margin-bottom: -14rem;
+  &--text {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-header-light,
+      $color-header-dark
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s;
+  }
+}
+
 .form-section {
   margin: 0;
   padding: 0;
