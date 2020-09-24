@@ -3,7 +3,7 @@ import "./sass/components/ServiceProvided.scss";
 
 export default function ServiceProvided() {
   return (
-    <body className="service-body">
+    <div className="service-body">
       <div className="service_area">
         <div className="main-container">
           <div className="row">
@@ -85,6 +85,6 @@ export default function ServiceProvided() {
           </section>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
