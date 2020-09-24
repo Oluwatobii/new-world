@@ -3,7 +3,7 @@ import "./sass/components/ServiceProvided.scss";
 
 export default function ServiceProvided() {
   return (
-    <body classname="service-body">
+    <body className="service-body">
       <div className="service_area">
         <div className="main-container">
           <div className="row">
@@ -60,8 +60,9 @@ export default function ServiceProvided() {
             <div className="content">
               <h2>CAD Designer</h2>
               <p>
-                I draw cool 2D/3D CAD designs, Best believe i can design for you
-                the Iron Man's helment, incase you want to join the Avengers.
+                I draw cool 2D/3D CAD designs. Should you want to join the
+                Avengers and be the new iron-man, I'll help you with designing
+                the Iron Man suit.
               </p>
             </div>
           </section>

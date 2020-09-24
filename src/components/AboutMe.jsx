@@ -28,8 +28,8 @@ export default function AboutMe() {
             considering my background is primarily in areas of mechanical
             engineering, but i’ve always had the curious mind of what web
             development (programming) entails and as a result, i found myself
-            learning javascript further delve into this new world of programming
-            and software development.
+            further delving into this new world of programming and software
+            development.
           </p>
         </div>
         <div className="col-1-of-2">

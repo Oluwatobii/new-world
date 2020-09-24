@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
 
-import AboutMe from "./components/AboutMe";
-import ContactMe from "./components/ContactMe";
-import DownloadResume from "./components/DownloadResume";
-import Footer from "./components/Footer";
+import Navigation from "./components/NavBar/Navigation";
 import HomePage from "./components/HomePage";
-import Navigation from "./components/Navigation";
-import Portfolio from "./components/Portfolio";
-import ScrollToTop from "./components/ScrollToTop";
+import AboutMe from "./components/AboutMe";
 import ServiceProvided from "./components/ServiceProvided";
+import DownloadResume from "./components/DownloadResume";
+import Portfolio from "./components/Portfolio";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (

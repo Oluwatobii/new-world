@@ -28,8 +28,6 @@ export default function HomePage() {
               Mechanical Engineer. <br />
               Car Enthustist. <br />
               Manchester United Supporter. <br />
-              Anime watcher. <br />
-              &amp; Manga reader.
             </span>
           </div>
           <div>
