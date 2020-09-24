@@ -1,6 +1,8 @@
 import React from "react";
 import "./sass/components/AboutMe.scss";
 
+import Emoji from "./Emoji";
+
 export default function AboutMe() {
   return (
     <section className="section-about">
@@ -33,11 +35,12 @@ export default function AboutMe() {
           </p>
         </div>
         <div className="col-1-of-2">
-          <img
+          {/* <img
             className="placeholder-img"
             alt="text"
             src={require("../img/placeholder.jpg")}
-          />
+          /> */}
+          <Emoji />
         </div>
       </div>
     </section>
