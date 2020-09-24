@@ -8,13 +8,16 @@
 @import "../layout/grid";
 
 .service_area {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: $color-grey-light-1;
-  padding: 25rem 0;
-  height: 90vh;
-  background-size: cover;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    $color-primary-light,
+    $color-primary 50%,
+    $color-white 50%,
+    $color-white 100%
+  );
 
   .main-container {
     padding-left: 43vw;
@@ -23,6 +26,8 @@
   }
 
   .section_title {
+    margin-top: -39rem;
+    margin-left: -65rem;
     span {
       position: relative;
       z-index: 3;
@@ -71,15 +76,13 @@
 }
 
 .container {
-  position: relative;
-  margin-left: 40px;
+  position: absolute;
   width: 91.5%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
-  background: $color-grey-light-1;
 }
 
 .container .card {

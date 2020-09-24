@@ -31,10 +31,6 @@ export default function AboutMe() {
             learning javascript further delve into this new world of programming
             and software development.
           </p>
-
-          <a href="#1" className="btn btn--blue">
-            Download Resume &darr;
-          </a>
         </div>
         <div className="col-1-of-2">
           <img

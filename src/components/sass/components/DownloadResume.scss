@@ -1,0 +1,47 @@
+@import "../abstracts/variables";
+
+@import "../base/animation";
+@import "../base/button";
+@import "../base/base";
+
+.resume-body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.1;
+  color: $color-grey-dark;
+}
+
+.resume-header {
+  height: 100vh;
+  /*
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url(../../../img/resume-backgnd.jpg);
+  */
+  background-image: url(../../../img/resume-backgnd.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.resume-btn {
+  margin-top: 2.4rem;
+}
+
+.resume-primary--main {
+  color: $color-black;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 1.5rem;
+}

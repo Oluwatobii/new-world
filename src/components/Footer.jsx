@@ -47,13 +47,26 @@ export default function Footer() {
         <div className="col-1-of-2">
           <p className="footer__copyright">
             Built by{" "}
-            <a href="#1" className="footer__link--text">
+            <a
+              href="https://github.com/Oluwatobii"
+              className="footer__link--text"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Oluwatobi A. Bello
             </a>{" "}
             for his portfolio website. Copyright &copy; by Oluwatobi A. Bello.
-            You are 100% allowed to use this webpage for both personal and
-            commercial use. A credit to the original author, Oluwatobi A. Bello,
-            is of course highly appreciated!
+            You are allowed to use this webpage for both personal and commercial
+            use. Of course, a credit to the original author, Oluwatobi A. Bello,
+            is highly appreciated! View the source code for this website{" "}
+            <a
+              href="https://github.com/Oluwatobii/new-world"
+              className="footer__link--text"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>{" "}
           </p>
         </div>
       </div>
