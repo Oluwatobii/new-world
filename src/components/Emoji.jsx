@@ -23,13 +23,13 @@ export default function Emoji() {
     });
   }
   return (
-    <body className="emoji-body">
+    <div className="emoji-div">
       <div className="face">
         <div className="eyes">
           <div className="eye"></div>
           <div className="eye"></div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }

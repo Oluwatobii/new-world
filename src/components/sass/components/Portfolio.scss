@@ -15,6 +15,10 @@
   height: 85vh;
 }
 
+.u-margin-top-big {
+  margin-bottom: 8rem;
+}
+
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -222,10 +226,124 @@
   }
 }
 
-.u-margin-top-big {
-  margin-bottom: 8rem;
-}
-
 .u-margin-top-huge {
   margin-bottom: 10rem;
 }
+
+/*
+
+//New cards
+
+.port-container {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  margin-left: 32rem;
+}
+
+.port-container .port-card {
+  position: relative;
+  height: 250px;
+  background: $color-primary;
+  display: flex;
+  width: 45%;
+
+  margin: 30px 0;
+}
+
+.port-img {
+  width: 45rem;
+  height: 45rem;
+}
+
+//HERE!
+.port-container .port-card .port-imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-secondary-light,
+      $color-secondary-dark
+    ),
+    url(../../../img/logo.JPG);
+
+  //background-image: url(../../../img/port-1.jpg);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.port-container .port-card:hover .port-imgBx {
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  top: calc(50% - 75px);
+  transition: 0.5s ease-in-out;
+  
+}
+
+  .port-container .port-card .port-imgBx:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(225, 225, 225, 0.05);
+    font-weight: 700;
+  }
+  
+  .port-container .port-card .port-imgBx img {
+    max-width: 750px;
+    max-height: 750px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .port-container .port-card:hover .port-imgBx img {
+    max-width: 750px;
+    max-height: 750px;
+  }
+  
+  .port-container .port-card .port-content {
+    position: absolute;
+    left: 10rem;
+    top: 5rem;
+    // width: calc(100% - 100px);
+    height: 100%;
+    margin-bottom: 9rem;
+    padding-right: 2.5rem;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    display: inline-block;
+  
+    text-align: left;
+  }
+  
+  .port-container .port-card .port-content h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+  
+  .port-container .port-card .port-content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 1.2rem 2rem;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+  }
+
+*/

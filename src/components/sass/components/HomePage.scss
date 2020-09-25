@@ -10,24 +10,25 @@
   /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
-  // padding: 0.3rem;
 }
 
 .header {
   height: 100vh;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary, 0.8)
+      rgba($color-primary, 0.2),
+      rgba($color-primary-light, 0.2)
     ),
-    url(../../../img/pic1.jpg);
+    url(../../../img/pic1-1.png);
+
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  background-position-y: -10rem;
   position: relative;
 
   &__logo-box {
     position: absolute;
-    top: 4rem;
+    top: 4.7rem;
     left: 4rem;
   }
 
