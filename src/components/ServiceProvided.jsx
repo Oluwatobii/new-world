@@ -3,7 +3,7 @@ import "./sass/components/ServiceProvided.scss";
 
 export default function ServiceProvided() {
   return (
-    <div className="service-body">
+    <div className="service-body" id="path_competencies">
       <div className="service_area">
         <div className="main-container">
           <div className="row">

@@ -3,7 +3,7 @@ import "./sass/components/DownloadResume.scss";
 
 export default function DownloadResume() {
   return (
-    <div className="resume-body">
+    <div className="resume-body" id="path_resume">
       <header className="resume-header">
         <div className="header__text-box">
           <h1 className="resume-primary--main">Download My Resume!</h1>

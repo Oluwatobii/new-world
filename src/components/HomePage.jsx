@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HomePage() {
   return (
-    <div className="body">
+    <div className="body" id="path_homepage">
       <header className="header">
         <div className="header__logo-box">
           <img

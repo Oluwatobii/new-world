@@ -5,7 +5,7 @@ import Emoji from "./Emoji";
 
 export default function AboutMe() {
   return (
-    <section className="section-about">
+    <section className="section-about" id="path_aboutme">
       <div className="about-container">
         <div className="row">
           <div className="col-xl-12">

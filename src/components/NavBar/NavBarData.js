@@ -7,37 +7,37 @@ import * as MdIcons from "react-icons/md";
 export const NavBarData = [
   {
     title: "Home",
-    path: "/",
+    path: "#path_homepage",
     icon: <AiIcons.AiFillHome />,
     className: "nav-text",
   },
   {
     title: "About Me",
-    path: "/reports",
+    path: "#path_aboutme",
     icon: <IoIcons.IoMdHelpCircle />,
     className: "nav-text",
   },
   {
     title: "Competencies",
-    path: "/products",
+    path: "#path_competencies",
     icon: <IoIcons.IoMdBriefcase />,
     className: "nav-text",
   },
   {
     title: "Resume",
-    path: "/team",
+    path: "#path_resume",
     icon: <IoIcons.IoIosPaper />,
     className: "nav-text",
   },
   {
     title: "Portfolio",
-    path: "/messages",
+    path: "#path_portfolio",
     icon: <MdIcons.MdCode />,
     className: "nav-text",
   },
   {
     title: "Contact Me",
-    path: "/support",
+    path: "#path_contactme",
     icon: <FaIcons.FaEnvelopeOpenText />,
     className: "nav-text",
   },

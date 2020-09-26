@@ -4,7 +4,7 @@ import "./sass/components/Portfolio.scss";
 
 export default function Portfolio() {
   return (
-    <div>
+    <div id="path_portfolio">
       <section className="section-portfolio" id="section-portfolio">
         <div className="u-center-text u-margin-bottom-big">
           <h3 className="section_title">Portfolio</h3>
