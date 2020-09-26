@@ -28,7 +28,7 @@ export default function ServiceProvided() {
             <div className="content">
               <p>
                 I develop for the web, working with various stack technologies
-                such as; REact, Node, MongoDB, PostgreSQL, Ruby on Rails, and
+                such as; React, Node, MongoDB, PostgreSQL, Ruby on Rails, and
                 more. This site is built on React!
               </p>
             </div>

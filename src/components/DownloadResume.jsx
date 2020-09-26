@@ -9,7 +9,12 @@ export default function DownloadResume() {
           <h1 className="resume-primary--main">Download My Resume!</h1>
 
           <div className="resume-btn">
-            <a href="#1" className="btn btn--blue">
+            <a
+              href="https://awss3resume.s3.ca-central-1.amazonaws.com/Oluwatobi+A.+Bello+R%C3%A9sum%C3%A9.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn--blue"
+            >
               Download Resume &darr;
             </a>
           </div>
