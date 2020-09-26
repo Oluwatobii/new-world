@@ -1,6 +1,8 @@
 import React from "react";
 import "./sass/components/Form.scss";
 
+import emailjs from "emailjs-com";
+
 import {
   FaMapMarkerAlt,
   FaEnvelopeOpenText,
@@ -11,6 +13,27 @@ import {
 } from "react-icons/fa";
 
 export default function Form() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_twv6ynv",
+        e.target,
+        "user_rZ1CcETiRwZopb1zTr2Bq"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <div>
       <div className="contact-me">
@@ -45,17 +68,29 @@ export default function Form() {
               </div>
               <ul className="sci">
                 <li>
-                  <a href="#1">
+                  <a
+                    href="https://twitter.com/Darkister_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaTwitter />
                   </a>
                 </li>
                 <li>
-                  <a href="#1">
+                  <a
+                    href="https://www.linkedin.com/in/oluwatobibello/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaLinkedinIn />
                   </a>
                 </li>
                 <li>
-                  <a href="#1">
+                  <a
+                    href="https://github.com/Oluwatobii"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaGithub />
                   </a>
                 </li>
@@ -63,33 +98,35 @@ export default function Form() {
             </div>
           </div>
           <div className="contactform">
-            <form>
+            <form onSubmit={sendEmail}>
               <h2>Send a Message</h2>
               <div className="formbox">
                 <div className="inputbox w50">
-                  <input type="text" name="" required />
+                  <input type="text" name="firstName" required />
                   <span>First Name</span>
                 </div>
                 <div className="inputbox w50">
-                  <input type="text" name="" required />
+                  <input type="text" name="lasttName" required />
                   <span>Last Name</span>
                 </div>
                 <div className="inputbox w50">
-                  <input type="text" name="" required />
+                  <input type="text" name="emailAddress" required />
                   <span>Email Address</span>
                 </div>
                 <div className="inputbox w50">
-                  <input type="text" name="" required />
+                  <input type="text" name="mobileNumber" required />
                   <span>Moible Number</span>
                 </div>
                 <div className="inputbox w100">
-                  <textarea type="text" name="" required />
+                  <textarea type="text" name="message" required />
                   <span>Write your message here...</span>
                 </div>
                 <div className="inputbox w100">
-                  <a href="#1" className="btn btn--dark-blue">
-                    Send
-                  </a>
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    className="btn btn--dark-blue"
+                  />
                 </div>
               </div>
             </form>

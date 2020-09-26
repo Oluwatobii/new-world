@@ -31,7 +31,10 @@ export default function HomePage() {
             </span>
           </div>
           <div>
-            <a href="#0" className="btn btn--dark-green btn--animated">
+            <a
+              href="#path_aboutme"
+              className="btn btn--dark-green btn--animated"
+            >
               Learn More
             </a>
           </div>

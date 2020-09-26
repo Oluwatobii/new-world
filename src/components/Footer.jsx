@@ -22,22 +22,37 @@ export default function Footer() {
           <div className="footer__navigation">
             <ul className="footer__list">
               <li className="footer__item">
-                <a href="#1" className="footer__link">
+                <a href="#path_contactme" className="footer__link">
                   <FaEnvelopeOpenText />
                 </a>
               </li>
               <li className="footer__item">
-                <a href="#1" className="footer__link">
+                <a
+                  href="https://twitter.com/Darkister_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer__link"
+                >
                   <FaTwitter />
                 </a>
               </li>
               <li className="footer__item">
-                <a href="#1" className="footer__link">
+                <a
+                  href="https://www.linkedin.com/in/oluwatobibello/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer__link"
+                >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="footer__item">
-                <a href="#1" className="footer__link">
+                <a
+                  href="https://github.com/Oluwatobii"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer__link"
+                >
                   <FaGithub />
                 </a>
               </li>
