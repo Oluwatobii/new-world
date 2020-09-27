@@ -10,10 +10,11 @@
   background: $color-primary;
   color: $color-white;
   z-index: 1;
-}
-.scroll-to-top .icon {
-  margin-top: 1rem;
-  justify-content: center;
-  animation: scrollTop 0.5s alternate ease infinite;
-  font-size: xx-large;
+
+  & .icon {
+    margin-top: 1rem;
+    justify-content: center;
+    animation: scrollTop 0.5s alternate ease infinite;
+    font-size: xx-large;
+  }
 }

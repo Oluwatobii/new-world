@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 
 import Navigation from "./components/NavBar/Navigation";
 import HomePage from "./components/HomePage";
@@ -13,7 +12,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navigation />
       <HomePage />
       <AboutMe />

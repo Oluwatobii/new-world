@@ -7,7 +7,7 @@ import * as MdIcons from "react-icons/md";
 export const NavBarData = [
   {
     title: "Home",
-    path: "#path_homepage",
+    path: "/",
     icon: <AiIcons.AiFillHome />,
     className: "nav-text",
   },

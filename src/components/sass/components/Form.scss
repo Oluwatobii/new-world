@@ -90,6 +90,10 @@
         margin-top: 40px;
         margin-left: 10px;
         font-size: x-large;
+
+        & li a {
+          color: white;
+        }
       }
 
       &--box {
