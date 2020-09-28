@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 @import "../base/animation";
 @import "../base/button";
@@ -10,6 +11,11 @@
   /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
+  padding: 0.2rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 
 .header {
@@ -25,6 +31,10 @@
   background-position: center;
   background-position-y: -10rem;
   position: relative;
+
+  @include respond(tab-port) {
+    background-position-y: 0;
+  }
 
   &__logo-box {
     position: fixed;
@@ -58,6 +68,11 @@
     font-weight: 400;
     letter-spacing: 1.5rem;
     animation: moveInRight 1s ease-in;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -71,6 +86,10 @@
     overflow: hidden;
     display: inline-block;
     animation: moveInRight 1s ease-in;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
 
     & span {
       animation: intrests 10s ease infinite;

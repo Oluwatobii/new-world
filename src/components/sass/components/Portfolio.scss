@@ -13,6 +13,14 @@
   margin-top: 0rem;
   margin-bottom: -50rem;
   height: 85vh;
+
+  @include respond(tab-land) {
+    height: 200vh;
+  }
+
+  @include respond(tab-port) {
+    height: 160vh;
+  }
 }
 
 .u-margin-top-big {
@@ -53,6 +61,10 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
+
+  @include respond(tab-land) {
+    margin-bottom: 5rem;
+  }
 
   &__side {
     height: 52rem;

@@ -19,6 +19,10 @@
     $color-white 100%
   );
 
+  @include respond(tab-land) {
+    min-height: 150vh;
+  }
+
   .main-container {
     padding-left: 37vw;
     margin-right: auto;

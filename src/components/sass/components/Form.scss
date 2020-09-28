@@ -34,6 +34,11 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  // max-width: 100%;
+
+  @include respond(tab-port) {
+    width: 50rem;
+  }
 
   &::before {
     content: "";
@@ -46,10 +51,20 @@
 
   & .form-container {
     position: relative;
-    min-width: 1100px;
-    min-height: 550px;
+    min-width: 110rem;
+    min-height: 55rem;
     display: flex;
     z-index: 1000;
+
+    @include respond(tab-land) {
+      min-width: 85rem;
+      min-height: 50rem;
+    }
+
+    @include respond(tab-port) {
+      min-width: 85rem;
+      min-height: 50rem;
+    }
 
     & .contactinfo {
       position: absolute;

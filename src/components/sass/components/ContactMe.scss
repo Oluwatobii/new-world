@@ -11,6 +11,10 @@
   align-items: center;
   min-height: 100vh;
 
+  // @include respond(tab-port) {
+  //   padding-top: 10rem;
+  // }
+
   & .contact-info {
     height: 5rem;
     float: center;
