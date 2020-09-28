@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .scroll-to-top {
   position: fixed;
@@ -11,10 +12,25 @@
   color: $color-white;
   z-index: 1;
 
+  @include respond(tab-land) {
+    left: 86%;
+  }
+
+  @include respond(phone) {
+    width: 4rem;
+    height: 4rem;
+    left: 69%;
+    font-size: small;
+  }
+
   & .icon {
     margin-top: 1rem;
     justify-content: center;
     animation: scrollTop 0.5s alternate ease infinite;
     font-size: xx-large;
+
+    @include respond(phone) {
+      font-size: medium;
+    }
   }
 }

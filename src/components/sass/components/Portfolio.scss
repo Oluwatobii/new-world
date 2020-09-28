@@ -14,12 +14,16 @@
   margin-bottom: -50rem;
   height: 85vh;
 
-  @include respond(tab-land) {
-    height: 200vh;
-  }
-
   @include respond(tab-port) {
     height: 160vh;
+  }
+
+  @include respond(tab-land) {
+    height: 300vh;
+  }
+
+  @include respond(phone) {
+    height: 320vh;
   }
 }
 
@@ -234,6 +238,47 @@
 
     &--value-3 {
       font-size: 3rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    height: auto;
+
+    &__side {
+      height: auto;
+      position: relative;
+      border-radius: 3px;
+
+      &--back {
+        transform: rotateY(0);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    //Back side styliing
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 4rem;
+      margin-left: -3.5rem;
+      font-size: medium;
+    }
+    &__stack-box {
+      margin-bottom: 3rem;
+    }
+
+    &__stack-value {
+      font-size: 6rem;
+
+      &--value-3 {
+        font-size: 3rem;
+      }
     }
   }
 }

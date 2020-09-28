@@ -13,13 +13,25 @@
   height: 81vh;
 
   @include respond(tab-land) {
+    height: 130vh;
+  }
+
+  @include respond(tab-port) {
     height: 100vh;
+  }
+
+  @include respond(phone) {
+    height: 111vh;
   }
 
   & .about-container {
     padding-left: 35vw;
     margin-right: auto;
     margin-left: auto;
+
+    @include respond(tab-land) {
+      padding-left: 0vw;
+    }
   }
 
   span {
@@ -41,6 +53,10 @@
       content: "";
       left: 50%;
       bottom: 100%;
+    }
+
+    @include respond(tab-port) {
+      margin-left: -2.2rem;
     }
   }
 }
@@ -84,12 +100,25 @@
 
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+
+  @include respond(tab-port) {
+    font-size: 5rem;
+  }
 }
 
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
+
+  @include respond(tab-port) {
+    margin-top: -13rem;
+    margin-left: -4rem;
+  }
+
+  @include respond(phone) {
+    margin-left: 0rem;
+  }
 }
 
 .paragraph {
@@ -100,6 +129,15 @@
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+
+  @include respond(tab-port) {
+    margin-left: -2rem;
+    padding: 0rem;
+  }
+
+  @include respond(phone) {
+    margin-left: 0rem;
+  }
 }
 
 .u-margin-bottom-small {
@@ -108,11 +146,15 @@
 
 .about-me {
   margin-top: 10rem;
-  margin-left: -5rem;
+  margin-left: 0rem;
 }
 
-// This is a placeholer styling, remove when ready!
-.placeholder-img {
-  width: 35rem;
-  height: auto;
+.about-emoji {
+  width: 25rem;
+  height: 25rem;
+
+  @include respond(phone) {
+    width: 20rem;
+    height: 20rem;
+  }
 }

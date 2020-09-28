@@ -25,9 +25,9 @@ export default function HomePage() {
           <div className="primary--sub">
             <span>
               Web Developer. <br />
-              Mechanical Engineer. <br />
+              Mech. Engr. <br />
               Car Enthustist. <br />
-              Manchester United Supporter. <br />
+              Man Utd Fan. <br />
             </span>
           </div>
           <div>
@@ -35,7 +35,7 @@ export default function HomePage() {
               href="#path_aboutme"
               className="btn btn--dark-green btn--animated"
             >
-              Learn More
+              Come on in
             </a>
           </div>
         </div>

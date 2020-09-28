@@ -29,7 +29,7 @@ export default function ServiceProvided() {
               <p>
                 I develop for the web, working with various stack technologies
                 such as; React, Node, MongoDB, PostgreSQL, Ruby on Rails, and
-                more. This site is built on React!
+                more. This site is built with React!
               </p>
             </div>
           </section>
@@ -56,7 +56,7 @@ export default function ServiceProvided() {
                 alt="text"
                 src={require("../img/icons8-design-100.png")}
               />
-              <h2>CAD Designer</h2>{" "}
+              <h2>2D/3D Computer-Aided-Designer</h2>{" "}
             </div>
             <div className="content">
               <p>

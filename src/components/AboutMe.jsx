@@ -34,7 +34,7 @@ export default function AboutMe() {
             development.
           </p>
         </div>
-        <div className="col-1-of-2">
+        <div className="col-1-of-2 about-emoji">
           {/* <img
             className="placeholder-img"
             alt="text"

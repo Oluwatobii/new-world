@@ -36,6 +36,11 @@
         margin-right: 0;
         margin-bottom: $gutter-vertical-small;
       }
+
+      @include respond(tab-land) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-x-small;
+      }
     }
 
     @include respond(tab-land) {

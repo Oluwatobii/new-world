@@ -7,6 +7,18 @@
 
 @import "../layout/grid";
 
+.service-body {
+  height: auto;
+
+  @include respond(tab-land) {
+    height: 160vh;
+  }
+
+  @include respond(tab-port) {
+    height: 250vh;
+  }
+}
+
 .service_area {
   display: flex;
   justify-content: center;
@@ -19,10 +31,6 @@
     $color-white 100%
   );
 
-  @include respond(tab-land) {
-    min-height: 150vh;
-  }
-
   .main-container {
     padding-left: 37vw;
     margin-right: auto;
@@ -32,6 +40,12 @@
   .section_title {
     margin-top: -33rem;
     margin-left: -65rem;
+
+    @include respond(tab-land) {
+      margin-top: -21rem;
+      margin-left: -35rem;
+    }
+
     span {
       position: relative;
       z-index: 3;
@@ -51,6 +65,14 @@
         content: "";
         left: 50%;
         bottom: 100%;
+      }
+
+      @include respond(tab-port) {
+        margin-left: 5.8rem;
+      }
+
+      @include respond(phone) {
+        margin-left: 19.8rem;
       }
     }
     h3 {
@@ -72,6 +94,14 @@
       color: transparent;
       letter-spacing: 0.2rem;
       transition: all 0.2s;
+
+      @include respond(tab-port) {
+        margin-left: 5.8rem;
+      }
+
+      @include respond(phone) {
+        margin-left: 19.8rem;
+      }
     }
   }
   .mb-50 {
@@ -87,6 +117,28 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
+
+  & section:nth-child(3).imgBx {
+    @include respond(phone) {
+      margin-top: 10rem;
+      font-size: 5.2rem;
+      margin: 0;
+    }
+  }
+
+  @include respond(tab-land) {
+    width: 71.5%;
+    margin-top: 30rem;
+    padding-top: 30rem;
+    margin-bottom: -30rem;
+  }
+
+  @include respond(tab-port) {
+    width: 71.5%;
+    margin-top: 30rem;
+    padding-top: 100rem;
+    margin-bottom: -30rem;
+  }
 
   & .card {
     position: relative;
@@ -137,8 +189,12 @@
       z-index: 1;
       box-shadow: 0, 5px 202px rgba(0, 0, 0, 0.2);
 
+      // &:nth-child(3) {
+      //   font-size: xx-large;
+      // }
+
       &:not(:last-child) {
-        padding-top: -900px;
+        padding-top: -90rem;
       }
 
       &--img {
@@ -149,6 +205,19 @@
         margin-left: -1rem;
         max-width: 100%;
         z-index: -100;
+
+        @include respond(tab-port) {
+          margin-left: -4rem;
+        }
+
+        // &:nth-child(3) {
+        //   font-size: 30.2rem;
+
+        //   @include respond(phone) {
+        //     margin-left: -4rem;
+        //     margin-top: -4rem;
+        //   }
+        // }
 
         &:not(:last-child) {
           padding-top: -700px;
@@ -162,6 +231,10 @@
         text-transform: uppercase;
         font-weight: 600;
         display: inline-block;
+
+        @include respond(phone) {
+          margin-left: -4rem;
+        }
       }
     }
 

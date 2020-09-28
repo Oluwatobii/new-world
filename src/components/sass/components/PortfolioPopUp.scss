@@ -15,6 +15,10 @@
   visibility: hidden;
   transition: all 0.3s;
 
+  @include respond(phone) {
+    height: 120vh;
+  }
+
   @supports (-webkit-backdrop-filter: blur(10px)) or
     (backdrop-filter: blur(10px)) {
     -webkit-backdrop-filter: blur(10px);
@@ -22,10 +26,18 @@
     background-color: rgba($color-black, 0.3);
   }
 
+  &-btn {
+    @include respond(tab-port) {
+      display: flex;
+      padding-left: 4rem;
+    }
+  }
+
   &__content {
     @include absCenter;
 
     width: 75%;
+    height: 50rem;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
@@ -34,11 +46,20 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(phone) {
+      width: 35rem;
+      height: 30rem;
+    }
   }
 
   &__left {
     width: 38%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      width: 0;
+    }
   }
 
   &__right {
@@ -46,11 +67,22 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-left: 5rem;
+      //padding: 0;
+      padding: 1rem 1rem;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__text {
@@ -70,6 +102,10 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tab-port) {
+      margin-top: 10rem;
+    }
 
     li {
       padding-bottom: 1rem;

@@ -96,7 +96,7 @@ export default function Portfolio() {
                   <div className="card__stack-box">
                     <p className="card__stack-only">Stack</p>
                     <p className="card__stack-value card__stack-value--value-3">
-                      Vanila JavaScript (EJS) + PostgreSQL
+                      EJS, Express, Node & PostgreSQL
                     </p>
                   </div>
                   <a href="#popup3" className="btn btn--white">

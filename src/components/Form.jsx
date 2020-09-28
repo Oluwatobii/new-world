@@ -115,7 +115,7 @@ export default function Form() {
                 </div>
                 <div className="inputbox w50">
                   <input type="text" name="mobileNumber" required />
-                  <span>Moible Number</span>
+                  <span>Moible No.</span>
                 </div>
                 <div className="inputbox w100">
                   <textarea type="text" name="message" required />
