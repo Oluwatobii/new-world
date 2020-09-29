@@ -14,7 +14,7 @@
   padding-right: 3rem;
   align-items: center;
   position: fixed;
-  z-index: 1000;
+  z-index: 2000;
 
   @include respond(phone) {
     position: fixed;
@@ -49,7 +49,7 @@
   top: 0;
   left: 100%;
   transition: all 2s ease-in-out;
-  z-index: 1000;
+  z-index: 2000;
 
   &.active {
     left: 143.375rem;

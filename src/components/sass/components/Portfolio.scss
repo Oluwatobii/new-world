@@ -23,7 +23,8 @@
   }
 
   @include respond(phone) {
-    height: 320vh;
+    height: 340vh;
+    width: 99%;
   }
 }
 
@@ -47,6 +48,11 @@
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
 }
 
 .section_title {
