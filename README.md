@@ -6,7 +6,7 @@ Note: This project was bootstrapped with [Create React App](https://github.com/f
 
 ## Preview
 
-<!-- !["Preview"](public/images/port-prev.png) -->
+!["Preview"](public/img/port-prev.png)
 
 [View Live preview](https://tbello.dev/).
 
