@@ -1,8 +1,12 @@
 // Colors
 //General
-$color-primary: #1b4b4b;
-$color-primary-light: #a5dfdf;
-$color-surname: #eeb238ff;
+//Header 449dd1
+$color-header-light: #449dd1;
+$color-header-dark: #449dd1;
+
+$color-primary: #f0d4a8;
+$color-primary-light: #f0d4a8;
+$color-surname: #e58e26;
 $color-intrests: #e58e26;
 $color-grey-dark: #777;
 $color-grey-dark-1: #333;
@@ -12,20 +16,26 @@ $color-black: #000;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$color-header-light: #2b6296;
-$color-header-dark: #001d38;
+$color-header-light: #449dd1;
+$color-header-dark: #2b6296;
+
+//Contact men page
+$color-box: #449dd1;
 
 //buttons
-$color-btn-blue: #0f3959;
-$color-btn-dark-green: #1b4b4b;
+$color-btn-blue: #449dd1;
+$color-btn-dark-green: #449dd1;
+
+//Navbar & Scrolltotop
+$color-nav-scrolltotop: #449dd1;
 
 //Why-hire-me
-$color-bck-gnd-light: #fddcc4;
-$color-bck-gnd-dark: #fddcc4;
+$color-bck-gnd-light: #f0d4a8;
+$color-bck-gnd-dark: #f0d4a8;
 
 //Portfolio
-$color-secondary-light: #fbc49d;
-$color-secondary-dark: #fbc49d;
+$color-secondary-light: #dd7230;
+$color-secondary-dark: #dd7230;
 
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;

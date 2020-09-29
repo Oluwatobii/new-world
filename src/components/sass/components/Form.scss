@@ -82,7 +82,7 @@
       top: 4rem;
       width: 35rem;
       height: calc(100% - 80px);
-      background: #0f3959;
+      background: #449dd1;
       z-index: 1;
       padding: 4rem;
       display: flex;
@@ -123,7 +123,7 @@
         font-size: x-large;
 
         & li a {
-          color: white;
+          color: black;
         }
       }
 
@@ -133,7 +133,7 @@
       }
 
       & h2 {
-        color: #fff;
+        color: black;
         font-size: 24px;
         font-weight: 500;
         margin-left: -141px;
@@ -143,7 +143,7 @@
         position: relative;
         margin: 20px 0;
         margin-left: -16px;
-
+        color: black;
         & li {
           position: relative;
           list-style: none;
@@ -152,11 +152,12 @@
           cursor: pointer;
           align-items: flex-start;
 
-          & span {
+          & span:nth-child(1):nth-child(2) {
             font-size: 1.3rem;
             filter: invert(1);
             opacity: 0.5;
             margin-left: 5px;
+            color: black;
           }
         }
       }
@@ -237,14 +238,14 @@
           font-size: $default-font-size;
 
           &:hover {
-            background-color: $color-btn-blue;
+            background-color: $color-nav-scrolltotop;
             color: $color-white;
             transform: translateY(-5px);
             box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
           }
 
           &::after {
-            background-color: $color-btn-blue;
+            background-color: $color-nav-scrolltotop;
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
             content: "";

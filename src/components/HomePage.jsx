@@ -20,7 +20,7 @@ export default function HomePage() {
         <div className="header__text-box">
           <h2 className="primary">Hello, I'm</h2>
           <h1 className="primary--main">
-            Oluwatobi A.<strong style={{ color: "#eeb238ff" }}>Bello</strong>
+            Oluwatobi A.<strong style={{ color: "#e58e26" }}>Bello</strong>
           </h1>
           <div className="primary--sub">
             <span>

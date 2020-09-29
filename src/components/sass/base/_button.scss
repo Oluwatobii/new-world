@@ -54,11 +54,11 @@
   }
 
   &--blue {
-    background-color: $color-tertiary-light;
+    background-color: $color-btn-blue;
     color: $color-white;
 
     &::after {
-      background-color: $color-tertiary-light;
+      background-color: $color-btn-blue;
 
       & {
         content: "";
