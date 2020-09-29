@@ -10,13 +10,13 @@ import {
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__logo-box">
+      {/* <div className="footer__logo-box">
         <img
           src={require("../img/logo.png")}
           alt="Full logo"
           className="footer__logo"
         />
-      </div>
+      </div> */}
       <div className="row">
         <div className="col-1-of-2">
           <div className="footer__navigation">
