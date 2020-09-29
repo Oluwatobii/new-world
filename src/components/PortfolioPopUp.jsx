@@ -8,7 +8,7 @@ export default function PortfolioPopUp() {
         <div className="popup__content">
           <div className="popup__left">
             <img
-              src={require("../img/gif1.gif")}
+              src={require("../img/scheduler.gif")}
               alt="Tour pic"
               className="popup__img"
             />
@@ -62,7 +62,7 @@ export default function PortfolioPopUp() {
         <div className="popup__content">
           <div className="popup__left">
             <img
-              src={require("../img/gif1.gif")}
+              src={require("../img/tutorama.gif")}
               alt="Tour pic"
               className="popup__img"
             />
@@ -88,7 +88,7 @@ export default function PortfolioPopUp() {
               <li>Add ratings and comments</li>
               <li>Communicating with tutor (Direct-Messaging in the app)</li>
             </ul>
-            <div className="popup-btn">
+            <div className="popup-btn popup-btn--2">
               <a
                 href="https://github.com/Oluwatobii/Tutorama"
                 target="_blank"
@@ -97,14 +97,14 @@ export default function PortfolioPopUp() {
               >
                 View Source Code
               </a>
-              <a
+              {/* <a
                 href="#1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn--blue btn--2"
               >
                 Visit Website
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function PortfolioPopUp() {
         <div className="popup__content">
           <div className="popup__left">
             <img
-              src={require("../img/gif1.gif")}
+              src={require("../img/quizapp.gif")}
               alt="Tour pic"
               className="popup__img"
             />
@@ -134,7 +134,7 @@ export default function PortfolioPopUp() {
               <li>User can see the results of their recent attempt</li>
               <li>User can share a link to the result of their attempt</li>
             </ul>
-            <div className="popup-btn">
+            <div className="popup-btn popup-btn--2">
               <a
                 href="https://github.com/Oluwatobii/QuizApp"
                 target="_blank"
@@ -143,14 +143,14 @@ export default function PortfolioPopUp() {
               >
                 View Source Code
               </a>
-              <a
+              {/* <a
                 href="#1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn--blue btn--2"
               >
                 Visit Website
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

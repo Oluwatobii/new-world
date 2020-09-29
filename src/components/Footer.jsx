@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__logo-box">
         <img
-          src={require("../img/logo1.png")}
+          src={require("../img/logo.png")}
           alt="Full logo"
           className="footer__logo"
         />

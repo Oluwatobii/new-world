@@ -11,7 +11,7 @@ export default function HomePage() {
       <header className="header">
         <div className="header__logo-box">
           <img
-            src={require("../img/logo1.png")}
+            src={require("../img/logo.png")}
             alt="logo"
             className="header__logo"
           />
