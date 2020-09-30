@@ -30,6 +30,7 @@
 
     @include respond(phone) {
       padding-left: 7rem;
+      margin-top: -5rem;
     }
   }
 }
@@ -185,6 +186,7 @@
       @include respond(phone) {
         margin-left: 11.3rem;
         padding-left: 20rem;
+        margin-top: 3rem;
       }
 
       & h2 {

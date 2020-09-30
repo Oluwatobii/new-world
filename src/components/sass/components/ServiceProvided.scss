@@ -17,6 +17,10 @@
   @include respond(tab-port) {
     height: 250vh;
   }
+
+  @include respond(phone) {
+    height: 270vh;
+  }
 }
 
 .service_area {

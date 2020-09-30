@@ -16,7 +16,7 @@
   transition: all 0.3s;
 
   @include respond(phone) {
-    height: 100vh;
+    height: 130vh;
   }
 
   @supports (-webkit-backdrop-filter: blur(10px)) or
