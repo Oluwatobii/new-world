@@ -23,6 +23,10 @@ html {
     font-size: 50%;
   }
 
+  @include respond(phone) {
+    width: 120%;
+  }
+
   /*
   @include respond(phone) {
     font-size: 30%;

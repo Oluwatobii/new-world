@@ -77,9 +77,9 @@ export default function ServiceProvided() {
             </div>
             <div className="content">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Commodi tempora animi, voluptates alias natus pariatur
-                praesentium, iusto.
+                Excellent at working well with others while holding myself
+                accountable and can also navigate the dynamics of the toughest
+                teams.
               </p>
             </div>
           </section>

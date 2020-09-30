@@ -27,6 +27,10 @@
     @include respond(tab-port) {
       padding-top: 1rem;
     }
+
+    @include respond(phone) {
+      padding-left: 7rem;
+    }
   }
 }
 
@@ -179,7 +183,7 @@
       }
 
       @include respond(phone) {
-        margin-left: 7.3rem;
+        margin-left: 11.3rem;
         padding-left: 20rem;
       }
 
