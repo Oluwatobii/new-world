@@ -5,8 +5,8 @@
   position: fixed;
   bottom: 4.2rem;
   left: 93%;
-  width: 6rem;
-  height: 6rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 100%;
   background: $color-nav-scrolltotop;
   color: $color-white;
@@ -24,10 +24,10 @@
   }
 
   & .icon {
-    margin-top: 1rem;
+    margin-top: 0.9rem;
     justify-content: center;
     animation: scrollTop 0.5s alternate ease infinite;
-    font-size: xx-large;
+    font-size: medium;
 
     @include respond(phone) {
       font-size: medium;
