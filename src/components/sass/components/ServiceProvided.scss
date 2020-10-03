@@ -15,7 +15,7 @@
   }
 
   @include respond(tab-port) {
-    height: 250vh;
+    height: 210vh;
   }
 
   @include respond(phone) {
@@ -211,7 +211,7 @@
         z-index: -100;
 
         @include respond(tab-port) {
-          margin-left: -4rem;
+          margin-left: -1rem;
         }
 
         // &:nth-child(3) {

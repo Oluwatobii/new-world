@@ -12,6 +12,10 @@ export default function PortfolioPopUp() {
               alt="Tour pic"
               className="popup__img"
             />
+            <h3 style={{ marginTop: "2rem" }}>
+              Note: Due to the free plan from Heroku please wait a few seconds
+              for the website to fully load.
+            </h3>
           </div>
           <div className="popup__right">
             <a href="#section-tours" className="popup__close">

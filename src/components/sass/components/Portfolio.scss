@@ -14,12 +14,12 @@
   margin-bottom: -50rem;
   height: 85vh;
 
-  @include respond(tab-port) {
-    height: 160vh;
-  }
-
   @include respond(tab-land) {
     height: 300vh;
+  }
+
+  @include respond(tab-port) {
+    height: 240vh;
   }
 
   @include respond(phone) {
@@ -247,7 +247,8 @@
     }
   }
 
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
 
     &__side {

@@ -55,12 +55,12 @@
     left: 143.375rem;
     transition: all 0.5s ease-in-out;
 
-    @include respond(tab-port) {
-      left: 52.375rem;
+    @include respond(tab-land) {
+      left: 80.375rem;
     }
 
-    @include respond(tab-land) {
-      left: 90.375rem;
+    @include respond(tab-port) {
+      left: 52.375rem;
     }
 
     @include respond(big-desktop) {

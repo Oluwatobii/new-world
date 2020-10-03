@@ -179,8 +179,8 @@
       box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
 
       @include respond(tab-port) {
-        margin-left: 10rem;
-        padding-left: 20rem;
+        margin-left: 8.5rem;
+        padding-left: 8rem;
       }
 
       @include respond(phone) {
