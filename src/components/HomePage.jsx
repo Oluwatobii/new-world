@@ -26,7 +26,7 @@ export default function HomePage() {
             <span>
               Web Developer. <br />
               Mech. Engr. <br />
-              Car Enthustist. <br />
+              Car Enthusiast. <br />
               Man Utd Fan. <br />
             </span>
           </div>
