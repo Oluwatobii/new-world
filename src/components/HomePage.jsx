@@ -9,13 +9,13 @@ export default function HomePage() {
   return (
     <div className="body" id="path_homepage">
       <header className="header">
-        {/* <div className="header__logo-box">
+        <div className="header__logo-box">
           <img
-            src={require("../img/logo.png")}
+            src={require("../img/logo-1-1.png")}
             alt="logo"
             className="header__logo"
           />
-        </div> */}
+        </div>
 
         <div className="header__text-box">
           <h2 className="primary">Hello, I'm</h2>
