@@ -1,20 +1,19 @@
 import React from "react";
 import "./sass/components/HomePage.scss";
-/*
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-*/
+
 
 export default function HomePage() {
   return (
     <div className="body" id="path_homepage">
       <header className="header">
         <div className="header__logo-box">
+        <a href="/">
           <img
             src={require("../img/logo-1-1.png")}
             alt="logo"
             className="header__logo"
           />
+        </a>
         </div>
 
         <div className="header__text-box">
